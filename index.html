@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pitha form</title>
+    <style>
+        label,h2{
+            display: block;
+        }
+        h2{
+            text-align: center;
+             color:yellow;
+             background-color:black;   
+        }
+        .container{
+            
+            justify-content: center;
+            background-color:navajowhite;
+            max-width: 600px;
+            align-items: center;
+            margin:0 auto;
+            border:3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2> Welcome To Jamal Ar Maa Pitha Goor</h2>
+   <form>
+    <!--Customer Personal Information Start-->
+    <label for="Name">Your Name
+    <input id="Name" type="text" placeholder="Enter Your Name"  >
+</label>
+<label for="Email">Your E-mail
+    <input id="Email"type="text" placeholder="Enter Your E-mail">
+</label>
+<label for="Mobile-Number">Your Mobile Number
+    <input id="Mobile-Number" type="number" placeholder="Enter your Mobile Number">
+</label>
+<!--Customer Personal Information End-->
+<!--Pitha Name Srart-->
+<fieldset>
+    <legend>Pick One Pitha</legend>
+    <label for="Chitoy">
+        <input id="Chitoy" type="radio" name="Pitha">Chitoy
+    </label>
+    <label for="Vapa">
+        <input id="Vapa" type="radio" name="Pitha">Vapa
+    </label>
+    <label for="Samosa">
+    <input type="radio" name="Pitha" id="Samosa">Samosa
+    </label>
+</fieldset>
+<!--Pitha Name end-->
+<!--Vorta  Name Srart-->
+<fieldset>
+    <legend>Select One or more Vorta</legend>
+    <label for="Shotki">
+     <input type="checkbox" name="Vorta" id="Shotki">Shotki
+    </label>
+    <label for="Moris">
+     <input type="checkbox" name="Vorta" id="Moris">Moris
+    </label>
+    <label for="Sorisa">
+     <input type="checkbox" name="Vorta" id="Sorisa">Sorisa
+    </label>
+</fieldset>
+<!--Vorta Name End-->
+<fieldset>
+    <legend>Special Instruction</legend>
+    <textarea name="" id="" cols="50" rows="10"></textarea>
+</fieldset>
+
+<!--Footer Srart-->
+<input type="reset" value="reset">
+<input type="submit" value="submit">
+<!--Footer End-->
+   </form>
+    </div>
+    <audio src="Let Me Down Slowly Lyrics.mp3" controls autoplay></audio>
+</body>
+</html>
